@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TEST</title>
+<style>
+img.tree {
+	width: 500px; /*너비 value | percent | auto */
+	height: 500px; /*높이 value | percent | auto */
+}
+</style>
+<script></script>
+<!-- 외부 언어 적용  -->
+</head>
+<body>
+	<!-- <img class="tree" src="tree_of_hope-2.jpg" /> -->
+
+	<!-- ul: 비목록 /  ol : 목록 / li : 리스트  -->
+	<ol type="1" start="1">
+		<!-- type : A,a,I,i,1 / start : 시작위치-->
+		<li>
+			<ol type="a">
+				<li>일본어</li>
+				<li>자바</li>
+				<li>취업반</li>
+			</ol>
+		</li>
+		<li>T</li>
+		<li>E</li>
+	</ol>
+
+	<br>
+
+	<ul type="disk">
+		<!-- type disk, circle, square -->
+		<li>일본어</li>
+		<li>자바</li>
+		<li>취업반</li>
+	</ul>
+
+	<!-- 모순(이상)Anomaly -->
+	<!-- IE, FireFox 에서는 Tag가 우선적. Tag에 따라 변함 -->
+	<ul type="a">
+		<li>일본어</li>
+		<li>
+			<ol type="disk">
+				<li>일본어</li>
+				<li>자바</li>
+				<li>취업반</li>
+			</ol>
+		</li>
+		<li>자바</li>
+		<li>취업반</li>
+	</ul>
+
+	<!-- Table(테이블) -->
+	<!-- border : 선 / cellspacing : 셀간의 간격 / cellpadding : 셀 두깨
+		 bgcolor : 배경색상 / background : 배경사진 / align : 자체정렬 / valign:내용정리(사용안됨)-->
+	<table border=1 cellspacing="10" cellpadding="3" bgcolor="yellow" background="tree_of_hope-2.jpg" align="center">
+		<tr>
+			<td>일본</td>
+			<td>자바</td>
+		</tr>
+		<tr>
+			<td>1본</td>
+			<td>사람</td>
+		</tr>
+	</table>
+</body>
+</html>

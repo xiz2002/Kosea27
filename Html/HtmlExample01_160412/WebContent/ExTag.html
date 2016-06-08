@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN""http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+	<title>html font</title>
+	<style>
+	<!--
+	style type ="text/css" -->.abcd {
+		font-size: 12px
+	}
+	
+	<!--
+	body (html 전체 ) 모두 적용-->.myfontstyle {
+		font-size: 15px;
+		color: blue;
+	}
+	</style>
+</head>
+<body>
+	<font style="font-size: 30px; color: blue;">자바 개발자 과정</font>
+	<br>
+	<div align=center class="myfontstyle">자바 개발자 과정</div>
+	<br>
+	<font color='#ff0000' size=2 face="바탕체">자바</font>개발자
+	<br>
+	<!-- br : 개행(line-feed)<font color=#Red(00~ff)Green(00~ff)Blue(00~ff)>-->
+	<!-- HTML은 같은 종류의(동일한) 태그가 많다 ! -->
+	<s>삭선</s>
+	<strike>삭선</strike>
+	<del>삭선</del>
+	<br>
+	<b>굵은</b>
+	<!--  bold-->
+	<strong>굵은</strong>
+	<br>
+	<u>밑줄</u>
+	<ins>밑줄</ins>
+	<br>
+	<i>이탤릭</i>
+	<cite>이탤릭</cite>
+	<dfn>이탤릭</dfn>
+	<em>이탤릭</em>
+	<address>이탤릭</address>
+	<var>이탤릭</var>
+	<!-- 개행(line-feed)-->
+	<br>
+	<tt>작은</tt>
+	<samp>작은</samp>
+	<xmp>작은</xmp>
+	<!-- 개행(line-feed)-->
+	<small>작은</small>
+	<!-- 개행(line-feed)-->
+	<br>
+	<sub>아랫첨자</sub>
+	<sup>윗첨자</sup>
+	<br>
+	<big>큰</big>
+	<br>
+
+	<pre>쓰는 그대로 표시</pre>
+	<p>
+		<!-- 문장 개행(linefeed) 기능-->
+	</p>
+	<p align=left>&nbsp;</p>
+	<!-- paragraph 문단 : 문장 개행(linefeed) 기능 : br -->
+	<!-- &nbsp; non-breaking space : 공백문자 -->
+	<div align=left>&nbsp;</div>
+	<!-- 문단 : division -> 레이어(layer) -->
+	<font>자바 개발자</font>
+	<br>
+	<font>자바&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;개발자</font>
+	<br>
+	<span>아무 기능 없음. 주로 CSS 적용시 사용.</span>
+	<br>
+
+	<hr>
+	<!-- 수평선 : 단락 구분 ; horizontal-->
+	<h1>글자의 크기</h1>
+	<!-- 개행 기능(line-feed) -->
+	<h2>글자의 크기</h2>
+	<h3>글자의 크기</h3>
+	<h4>글자의 크기</h4>
+	<h5>글자의 크기</h5>
+	<h6>글자의 크기</h6>
+
+	자바 개발자들은
+	<BLOCKQUOTE>"현장에 필요한 교육을 받고 투입되어야 살아남을 수 있다."</BLOCKQUOTE>
+	라고 혹자는 말한다.
+	<br>
+
+	<MARQUEE behavior="alternate" bgcolor="yellow" direction="right"
+		width="300"> 움직이는 글자</MARQUEE>
+	<br>
+
+	<br>
+	<hr>
+	<br>
+	<!-- 복합 적용 : 양파(onion) 구조 -->
+
+	<font color="blue">자바 <b>개발자</font>
+	</b>
+	<!-- X -->
+	<font color="blue">자바 <b>개발자</b></font>
+	<!-- Good! -->
+
+	<font color="blue">자바 <b><s><u><i>개발자 </i></u></s></b></font>
+	<br>
+
+	<font color="red">자바 <b><s><u><i><font
+						color="blue">개발자 </font></i></u></s></b><br></font>
+	<br>
+
+	<div align="center">자바 개발자</div>
+	<!-- 개행(linefeed) 기능 없음 -->
+	<p align="center">자바 개발자</p>
+	<center>자바 개발자</center>
+	<!-- 개행(linefeed) 기능 없음 -->
+
+	<!-- <left> <right> : X -->
+
+	<br>
+	<hr>
+	<br>
+
+	<!-- CSS(Cascade Style Sheet), Style Sheet -->
+</body>
+</html>

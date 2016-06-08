@@ -1,0 +1,5 @@
+@CHARSET "UTF-8";
+img.tree {
+	width: 500px; /*너비 value | percent | auto */
+	height: 500px; /*높이 value | percent | auto */
+}

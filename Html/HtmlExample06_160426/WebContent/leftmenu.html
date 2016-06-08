@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>leftmenu</title>
+<style>
+a:link {
+	fontsize: 9pt;
+	color: cyan;
+	text-decoration: none;
+}
+
+a:hover {
+	fontsize: 11pt;
+	color: red;
+	text-decoration: underline;	
+}
+
+a:visited {
+	fontsize: 9pt;
+	color: green;
+	text-decoration: overline;
+}
+/*
+a:active {
+	fontsize: 9pt;
+	color: cyan;
+	text-decoration: none;
+}*/
+</style>
+</head>
+<body bgcolor="yellow">
+	좌측메뉴
+	<!--  버튼 링크에 따른 target  -->
+	<p>&nbsp;</p>
+	<!-- frame target -->
+	<a href="http://cafe.naver.com/kosea27" target="_self"> <!-- default/_self: 자기자신, _blank: 새창 -->
+		self target
+	</a>
+	<p>&nbsp;</p>
+	<!-- frame target -->
+	<a href="frametest.html" target="main"> <!-- targetname: 해당이름에 적용 -->
+		frame target
+	</a>
+	<p>&nbsp;</p>
+	<!-- parent target : top과의 차이를 알기 위해서는 
+	   프레임 타겟 버튼을 클릭한 후에 메인 프레임에서 클릭 !-->
+	<a href="http://cafe.naver.com/kosea27" target="_parent"> parent
+		target </a>
+	<p>&nbsp;</p>
+	<!-- top target : parent와의 차이를 알기 위해서는 
+	    프레임 타겟 버튼을 클릭한 후에 메인 프레임에서 클릭 !-->
+	<a href="http://cafe.naver.com/kosea27" target="_top"> <!-- _top: 최초 -->
+		top target
+	</a>
+</body>
+</html>

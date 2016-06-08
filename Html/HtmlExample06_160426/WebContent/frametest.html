@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+<title>frame</title>
+</head>
+<!--  body -->
+<!-- frameset/frame : 프레임을 사용할 아래의 내용을 body 안에 두면 출력이 안됨. -->
+<!-- 화면해상도 - 200 = * / Percent사용가능 Ex)10%-->
+ <frameset cols="200, *" border=5 bordercolor=blue>
+ 	<frame src="leftmenu.html"   frameborder="yes" 
+ 	             name="leftmenu" scrolling="no" noresize><!-- Frame name이 targetname / -->
+ 	<frameset rows="100, *" border=5 bordercolor=red>
+ 		<frame src="righttop.html" name="righttop" scrolling="no">
+ 		<frame src="main.html" name="main" scrolling="auto">
+ 	</frameset>
+ </frameset>
+<!-- /body-->
+</html>
