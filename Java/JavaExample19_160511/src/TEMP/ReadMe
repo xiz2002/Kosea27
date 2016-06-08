@@ -1,0 +1,37 @@
+Update
+
+#리턴값을 우선적으로 처리!
+
+1. 코드
+	1) 지역변수 선언/할당
+		- DB연결
+		- SQL처리 (해석)
+		- SQL : String, StringBuffer/StringBuilder -> toString()
+		- Message Variable : Return value
+		
+	2) 코드
+		- DB연결
+		- SQL 해석
+		- SQL 인자 준비 (필드순서,공백에주의) 
+			Ex) '?'
+		- 예외처리 : throws -> 사용자 메시징 -> try ~ catch (근데 굳이?)
+				 : 메세지 -> 타이틀(코드 위치) 
+				 	Ex) 'MemberDAOerviceImpl.insertMember.SQL : '
+				 : printStackTrace() / 너무 길어.
+				 : finally -> 자원반납(예외처리) -> 함수화(closeAll)
+				 : 전문화 예외처리 -> 포괄적인예외처리
+				 : 자원 반납순서
+				 	Ex) pstmt -> conn
+		- SQL 실행
+		- 리턴값 -> 조건문 -> 메세징(성공여부)
+	
+2. 자원 반납 함수(메소드) : closeAll
+	1) 원형(ProtoType)
+		Ex) private void closeAll(ResultSet rs,
+								  PreparedStatement pstmt,
+								  Connection conn) throw Exception
+		Ex) } finally {
+				closeAll(null, pstmt, conn);
+			}
+	
+	
