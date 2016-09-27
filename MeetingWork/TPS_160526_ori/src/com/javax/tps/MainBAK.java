@@ -2,7 +2,7 @@ package com.javax.tps;
 
 import java.util.Scanner;
 
-public class main2 {
+public class MainBAK {
 
 	public static void main(String[] args) throws Exception {
 
@@ -10,7 +10,7 @@ public class main2 {
 
 		int boxnumber = 9;
 		int thingsMax = 100;
-		
+
 		String[][] box = new String[boxnumber][thingsMax];
 		int flag;
 		int boxNum;
@@ -32,7 +32,7 @@ public class main2 {
 					System.out.println("物はなんですか？");
 					System.out.print("이름 : ");
 					things = scan.next();
-					
+
 					for (int i = 0, m = box[boxNum].length; i < m; i++) {
 						if (box[boxNum][i] == null) {
 							box[boxNum][i] = things;
@@ -42,7 +42,7 @@ public class main2 {
 
 					System.out.println("Box" + boxNum + "番に物を入れました。");
 					// 적재 끝.
-					if (box[boxNum][0] == null) {  // 박스의 첫 칸에 아무것도 없을경우.
+					if (box[boxNum][0] == null) { // 박스의 첫 칸에 아무것도 없을경우.
 						System.out.println("中には何もありません。");
 					} else {
 						System.out.print("中には [" + box[boxNum][0]);
@@ -79,22 +79,23 @@ public class main2 {
 							System.out.print(", " + box[boxNum][i]);
 					}
 					System.out.println("]が あります。");
-// 목록 출력
+					// 목록 출력
 					System.out.println("取り出したい物を入力してください。");
 					System.out.println("물건 이름 : ");
 					things = scan.next();
 
-//					for (int i = 0; i < box[boxNum].length; i++) {
-//						if (box[boxNum][i] == things) {
-//							box[boxNum][i] = null;
-//
-//							for (int j = i + 1; j < box[boxNum].length; j++) // 전체를 앞으로 땡기는 문
-//								box[boxNum][j - i] = box[boxNum][j];
-//						} else {
-//							System.out.println("존재하지 않는 물건입니다.");
-//							break;
-//						}
-//					}
+					// for (int i = 0; i < box[boxNum].length; i++) {
+					// if (box[boxNum][i] == things) {
+					// box[boxNum][i] = null;
+					//
+					// for (int j = i + 1; j < box[boxNum].length; j++) // 전체를
+					// 앞으로 땡기는 문
+					// box[boxNum][j - i] = box[boxNum][j];
+					// } else {
+					// System.out.println("존재하지 않는 물건입니다.");
+					// break;
+					// }
+					// }
 
 					for (int j = 0; j < i; j++) {
 						if (box[boxNum][j].equals(things)) {
@@ -111,22 +112,21 @@ public class main2 {
 
 			else if (flag == 3) {
 				// System.out.println("flag == 3");
-				for(int i=0; i<9; i++){
-					for(int j=0; j<box[i].length-1; j++){
-						if(box[i][j]!=null){
+				for (int i = 0; i < 9; i++) {
+					for (int j = 0; j < box[i].length - 1; j++) {
+						if (box[i][j] != null) {
 							System.out.print(i + "서랍에는 " + box[i][0]);
-							for(j=1; j<box[i].length; j++){
-								if(box[i][j]==null)
+							for (j = 1; j < box[i].length; j++) {
+								if (box[i][j] == null)
 									break;
 								else
 									System.out.print(", " + box[i][j]);
 							}
 							System.out.println("이 있습니다.");
-							}
-						else
-							System.out.println(i + "서랍은 비어있음" );
+						} else
+							System.out.println(i + "서랍은 비어있음");
 						break;
-					}		
+					}
 				}
 				System.out.println("종료");
 				break;

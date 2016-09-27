@@ -1,0 +1,3 @@
+<script>
+    alert(typeif ([]));
+</script>
